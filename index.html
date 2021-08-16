@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  <style>
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .hero {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background: url("./assets/background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .form {
+        width:350px;
+        height:470px;
+        background-color:#494848;
+        border-radius:50px;
+        position:absolute;
+        top:4.5rem;
+        left:51.8rem;
+        box-shadow:0px 0px 25px #060909;
+    }
+
+    .form >.element:first-child{
+        margin-top:5.5em;
+    }
+
+
+    .element{
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        padding:10px;
+    }
+
+
+    .element > div {
+        margin-bottom:10px;
+        margin-left:15%;
+    }
+
+    .input{
+        border:solid 1px #01FAFA;
+        background-color: #494848;
+        width: 70%;
+        height: 2rem;
+        margin:auto;
+        border-radius: 10px;
+        color:white;
+    }
+
+
+    .button{
+        margin:auto;
+        margin-top:5em;
+        border:none;
+        cursor:pointer;
+        width:70%;
+        height:2rem;
+        border-radius: 10px;
+        background-color:#01FAFA;
+        box-shadow: 0px 9px 10px rgb(34, 33, 33);
+        transition:all 0.5s ease;
+        text-transform: uppercase;
+    }
+
+    .button:hover{
+        background-color:rgb(88, 238, 29);
+        box-shadow:0px 5px rgba(0, 0, 0, 0.61);
+    }
+
+
+
+    label{
+        color:white;
+        font-weight:10px;
+    }
+
+    .fa-user, .fa-lock{
+        color:white;
+    }
+
+    .logo{
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        background-image: url(./assets/logo.png);
+        object-fit: cover;
+        object-position: center;
+    }
+
+    footer{
+        width: 100vw;
+        position: absolute;
+        bottom:0px;
+        height: 2em;
+        background-color: rgba(65, 65, 65, 0.6);
+        text-align: center;
+        color: white;
+        line-height: 2em;
+        font-size: 12px;
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="hero">
+
+    <div class="logo">
+
+    </div>
+
+    <section class="flex">
+
+            <form class="form" method="POST">
+
+                <div class="element">
+                    <div>
+                        <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
+                        <label class="label">Username</label>
+                    </div>
+                    <input class="input" type="text" name="username" >
+                </div>
+
+                <div class="element">
+                    <div>
+                        <span class="icon is-small is-left"> <i class="fas fa-lock"></i></span>
+                        <label class=  "label">Password</label>
+                    </div>
+                    <input class="input" type="password" name="password" >
+                </div>
+
+                <div class="element">
+                    <button type="submit" class="button is-success">Login</button>
+                </div>
+
+            </form>
+
+    </section>
+
+    <footer>
+        Copyright 2021 - Carlos Giner
+    </footer>
+
+</div>
+
+</body>
+
+</html>
